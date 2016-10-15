@@ -9,7 +9,6 @@ Feedstock license: BSD 3-Clause
 
 Summary: Large-scale Visualization Data Storage
 
-
 pyvisfile lets you write new-style Vtk visualization files.
 
 
