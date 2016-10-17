@@ -37,7 +37,6 @@ about:
     license_file: LICENSE
     summary: Large-scale Visualization Data Storage
     description: |
-
         pyvisfile lets you write new-style Vtk visualization files.
 
 extra:
