@@ -1,45 +1,45 @@
 {% set name = "pyvisfile" %}
-{% set version = "2016.1" %}
-{% set sha256 = "1b1f4eec567b2a16893e61c7b36f2ecf63823dad12a802ef5427a243e44795fb" %}
+{% set version = "2020.1" %}
+{% set sha256 = "0b7bb1a0b842f448acb2b893be5f4be6ff29e98f750a5bc0eb608dfa7df83291" %}
 
 package:
-    name: {{ name|lower }}
-    version: {{ version }}
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-    fn: {{ name }}-{{ version }}.tar.gz
-    url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-    sha256: {{ sha256 }}
+  fn: {{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: {{ sha256 }}
 
 build:
-    noarch: python
-    number: 1
-    script: python setup.py install --single-version-externally-managed --record record.txt
+  noarch: python
+  number: 0
+  script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
-    build:
-        - python
-        - setuptools
-    run:
-        - python
-        - numpy
-        - pytools
-        - six
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+    - numpy
+    - pytools
+    - six
 
 test:
-    imports:
-        - {{ name }}
+  imports:
+    - {{ name }}
 
 about:
-    home: http://pypi.python.org/pypi/pyvisfile
-    dev_url: http://github.com/inducer/pyvisfile
-    doc_url: https://documen.tician.de/pyvisfile
-    license: MIT
-    license_file: LICENSE
-    summary: Large-scale Visualization Data Storage
-    description: |
-        pyvisfile lets you write new-style Vtk visualization files.
+  home: http://pypi.python.org/pypi/pyvisfile
+  dev_url: http://github.com/inducer/pyvisfile
+  doc_url: https://documen.tician.de/pyvisfile
+  license: MIT
+  license_file: LICENSE
+  summary: Large-scale Visualization Data Storage
+  description: |
+    pyvisfile lets you write new-style Vtk visualization files.
 
 extra:
-    recipe-maintainers:
-        - inducer
+  recipe-maintainers:
+    - inducer
