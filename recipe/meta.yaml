@@ -1,6 +1,6 @@
 {% set name = "pyvisfile" %}
-{% set version = "2020.1" %}
-{% set sha256 = "0b7bb1a0b842f448acb2b893be5f4be6ff29e98f750a5bc0eb608dfa7df83291" %}
+{% set version = "2021.1" %}
+{% set sha256 = "2653a0f29148d714433242d768e55880c7d55a7d8d518686d9f73249351f6763" %}
 
 package:
   name: {{ name|lower }}
@@ -17,7 +17,7 @@ build:
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
-  build:
+  host:
     - python
     - setuptools
   run:
