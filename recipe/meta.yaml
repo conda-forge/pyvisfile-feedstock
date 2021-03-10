@@ -25,7 +25,6 @@ requirements:
     - python >=3.6
     - numpy
     - pytools
-    - six
 
 test:
   imports:
