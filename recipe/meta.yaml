@@ -1,6 +1,6 @@
 {% set name = "pyvisfile" %}
-{% set version = "2021.1" %}
-{% set sha256 = "2653a0f29148d714433242d768e55880c7d55a7d8d518686d9f73249351f6763" %}
+{% set version = "2022.1" %}
+{% set sha256 = "249e7a1a507c58fca49bd3eb6634df64849c016641717727178f931454179011" %}
 
 package:
   name: {{ name|lower }}
@@ -14,7 +14,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
