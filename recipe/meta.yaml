@@ -1,6 +1,6 @@
 {% set name = "pyvisfile" %}
-{% set version = "2022.1.1" %}
-{% set sha256 = "433d6b766b6a6b12d237c0f23d8f3096594157eae3ea17b5867da8fbb1a4cda9" %}
+{% set version = "2024.1" %}
+{% set sha256 = "70b6b1bcaab4ec3c98b4e39ba3002210a43eb9c3f6c21feecd2493fa5fe117fc" %}
 
 package:
   name: {{ name|lower }}
